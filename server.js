@@ -21,7 +21,7 @@ server.use(log);
 server.use(healthcheck('_health'));
 server.use(forwardHeaders);
 server.use(prerender.blockResources());
-server.use(prerender.removeScriptTags());
+//server.use(prerender.removeScriptTags());
 server.use(removePrefetchTags);
 server.use(prerender.httpHeaders());
 if (process.env.DEBUG_PAGES) {
